@@ -1,23 +1,46 @@
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
+
+import java.io.File;
 import java.io.IOException;
+import java.util.Scanner;
+
 import static org.antlr.v4.runtime.CharStreams.fromFileName;
+import static org.antlr.v4.runtime.CharStreams.fromString;
 
 public class Main {
     public static void main (String[] args){
         try{
             String file = "string.txt";
-            CharStream ch = fromFileName(file);
-            gLexer gl = new gLexer(ch);
-            CommonTokenStream cts = new CommonTokenStream(gl);
-            gParser p = new gParser(cts);
-            ParseTree pt = p.prule();
+            Scanner scanner = new Scanner(new File(file));
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                // process the line
+                //CharStream ch = fromFileName(file);
+                CharStream ch = fromString(line);
 
-            checkString(ch,pt.getText());
+                gLexer gl = new gLexer(ch);
+                CommonTokenStream cts = new CommonTokenStream(gl);
+                gParser p = new gParser(cts);
+                ParseTree pt = p.prule();
 
-            Visitor v = new Visitor();
-            v.visit(pt);
+                boolean stringCheck = checkString(ch,pt.getText());
+
+                boolean parseCorrect = true;
+                if (p.getNumberOfSyntaxErrors() > 0) {
+                    parseCorrect = false;
+                }
+
+                Visitor v = new Visitor();
+                v.visit(pt);
+                System.out.print(ch);
+                if(parseCorrect&&stringCheck){
+                    System.out.println(" is Accepted");
+                }else{
+                    System.out.println(" is Rejected");
+                }
+            }
 
         }catch (IOException e){
             e.printStackTrace();
@@ -25,11 +48,12 @@ public class Main {
 
     }
 
-    private static void checkString(CharStream ch, String text) {
-            if(ch.equals(text)) {
-                System.out.println("Success");
+    private static boolean checkString(CharStream ch, String text) {
+
+            if(ch.toString().equals(text)) {
+                return true;
             }else{
-                System.out.println("Reject");
+                return false;
             }
     }
 

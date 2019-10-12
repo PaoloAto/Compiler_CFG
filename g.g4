@@ -1,13 +1,13 @@
 grammar g;
-prule: s;
-s: c | s ' U ' c ;
-c: r | '('s')' | '('s')'o;
-r: n | 'E';
-o: X | X n;
-n: d | n d;
-d: A | A X;
-A: 'a'..'z'|'0'..'9';
-X: '*' | '+' | '?';
+prule: start;
+start: parenthesis | start ' U ' parenthesis ;
+parenthesis: value | '('start')' | '('start')'outerParenthesis;
+value: charArray | 'E';
+outerParenthesis: Symbol | Symbol charArray;
+charArray: charAndSymbol | charArray charAndSymbol;
+charAndSymbol: Char | Char Symbol;
+Char: 'a'..'z'|'0'..'9';
+Symbol: '*' | '+' | '?';
 /*
 Expr: Parenthesis ExprRecur;
 ExprRecur: (' U ' Parenthesis ExprRecur)?;
