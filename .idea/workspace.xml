@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2130c493-cf4f-4013-b56e-d196ad60e9a9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/g.g4" beforeDir="false" afterPath="$PROJECT_DIR$/g.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/Visitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/gBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/gBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/gBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/gBaseVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/gLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/gLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/gListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/gListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/gParser$CContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/gParser$CContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/gParser$DContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/gParser$DContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/gParser$NContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/gParser$NContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/gParser$OContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/gParser$OContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/gParser$PruleContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/gParser$PruleContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/gParser$RContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/gParser$RContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/gParser$SContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/gParser$SContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/gParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/gParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/gVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/gVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visitor.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +96,12 @@
       <workItem from="1570878137438" duration="869000" />
       <workItem from="1570898289827" duration="8426000" />
       <workItem from="1570950165801" duration="361000" />
+      <workItem from="1570958478011" duration="439000" />
+      <workItem from="1570965929098" duration="654000" />
+      <workItem from="1570966733965" duration="195000" />
+      <workItem from="1570972023978" duration="870000" />
+      <workItem from="1570973141622" duration="119000" />
+      <workItem from="1570974016938" duration="2291000" />
     </task>
     <servers />
   </component>
@@ -90,7 +113,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -1,11 +1,9 @@
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
-
 import static org.antlr.v4.runtime.CharStreams.fromFileName;
 import static org.antlr.v4.runtime.CharStreams.fromString;
 
@@ -32,8 +30,6 @@ public class Main {
                     parseCorrect = false;
                 }
 
-                Visitor v = new Visitor();
-                v.visit(pt);
                 System.out.print(ch);
                 if(parseCorrect&&stringCheck){
                     System.out.println(" is Accepted");
@@ -49,12 +45,11 @@ public class Main {
     }
 
     private static boolean checkString(CharStream ch, String text) {
-
-            if(ch.toString().equals(text)) {
-                return true;
-            }else{
-                return false;
-            }
+        if(ch.toString().equals(text)) {
+            return true;
+        }else{
+            return false;
+        }
     }
 
 }
