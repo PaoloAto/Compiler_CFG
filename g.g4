@@ -1,6 +1,6 @@
 grammar g;
 prule: start;
-start: parenthesis | start ' U ' parenthesis ;
+start: parenthesis | parenthesis ' U ' start| parenthesis start ;
 parenthesis: value | '('start')' | '('start')'outerParenthesis;
 value: charArray | 'E';
 outerParenthesis: Symbol | Symbol charArray;
